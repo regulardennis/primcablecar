@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="index.js"></script>
-    <title>prim cable car</title>
-</head>
-<body>
-    <button onclick="document.location='rights.html'">rights</button>
-    <button onclick="document.location='art.html'">art</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="index.js"></script>
+        <title>prim cable car</title>
+    </head>
+
+    <body>
+        <button onclick="document.location='rights.html'">rights</button>
+        <button onclick="document.location='art.html'">art</button>
   
-    <div class="centre">
-        <img src="images/image.png" onclick="onClick()" class="no-select-drag">
+        <div class="centre">
+            <img src="images/image.png" onclick="onClick()" class="no-select-drag">
       
-        <h1 id="pointsDisplay">prim points: 0</h1>
-        <button onclick="onReset()">reset</button>
-    </div>
-</body>
+            <h1 id="points">prim points: 0</h1>
+            <button onclick="onReset()">reset</button>
+        </div>
+        
+        <div id="shop"></div>
+    </body>
 </html>
