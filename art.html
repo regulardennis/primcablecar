@@ -13,6 +13,14 @@
     <title>art</title>
 </head>
 <body>
+    <audio id="music" loop src="audio/art_music.mp3"></audio>
+    <script>
+            const audio = document.getElementById("music");
+            document.addEventListener("click", () => {
+                audio.play();
+            }, {once: true});
+    </script>
+
     <div class="navbar">
         <button onclick="document.location='index.html'">cable car</button>
     </div>
@@ -52,6 +60,15 @@
             <img src="images/art/7.jpg"" class="no-select-drag">
             <p>made by @quert_gb</p>
         </div>
+
+        <div class="gallery-item">
+            <img src="images/art/8.png"" class="no-select-drag">
+            <p>made by @velciyr on discord</p>
+        </div>
+    </div>
+
+    <div class="footer">
+            <p>click anywhere for music from pixabay.com</p>
     </div>
 </body>
 </html>
