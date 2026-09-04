@@ -7,6 +7,23 @@ button {
     font-family: "Short Stack", Impact;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+}
+
 .centre {
 	position: fixed;
 	top: 50%;
@@ -27,8 +44,8 @@ button {
     height: 100vh;
     width: 20rem;
 
-    background-color: black;
-    color: white;
+    background-image: url(images/bg.png);
+    background-color: lightgrey;
 
     box-sizing: border-box;
     padding: 16px;

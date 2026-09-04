@@ -15,10 +15,20 @@
     </head>
 
     <body>
-        <button onclick="document.location='https://github.com/regulardennis/primcablecar/graphs/contributors?all=1'">lovely people who made this</button>
-        <button onclick="document.location='rights.html'">rights</button>
-        <button onclick="document.location='art.html'">art</button>
-  
+        <audio id="music" loop src="audio/music.mp3"></audio>
+        <script>
+            const audio = document.getElementById("music");
+            document.addEventListener("click", () => {
+                audio.play();
+            }, {once: true});
+        </script>
+
+        <div class="navbar">
+            <button onclick="document.location='https://github.com/regulardennis/primcablecar/graphs/contributors?all=1'">lovely people who made this</button>
+            <button onclick="document.location='rights.html'">rights</button>
+            <button onclick="document.location='art.html'">art</button>
+        </div>
+
         <div class="centre">
             <img src="images/image.png" onclick="onClick()" class="no-select-drag">
       
@@ -27,5 +37,9 @@
         </div>
         
         <div id="shop"></div>
+
+        <div class="footer">
+            <p>music by bensound.com</p>
+        </div>
     </body>
 </html>
