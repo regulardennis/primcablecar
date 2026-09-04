@@ -51,3 +51,20 @@ button {
     padding: 16px;
     overflow-y: auto;
 }
+
+.masonry-gallery {
+  column-count: 4; 
+  column-gap: 16px; 
+  padding: 16px;
+}
+
+.gallery-item {
+  break-inside: avoid; 
+  margin-bottom: 16px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
