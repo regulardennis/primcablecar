@@ -1,0 +1,4 @@
+localhost:80 {
+  root /home/kate/prim
+  file_server
+}
