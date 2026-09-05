@@ -16,10 +16,63 @@
 
     <body>
         <audio id="music" loop src="audio/music.mp3"></audio>
+        <audio id="voice" src="audio/voicelines/01.mp3"></audio>
         <script>
-            const audio = document.getElementById("music");
+            const music = document.getElementById("music");
+            const voice = document.getElementById("voice");
+
+            const voiceClips = [
+                "audio/voicelines/02.mp3",
+                "audio/voicelines/03.mp3",
+                "audio/voicelines/04.mp3",
+                "audio/voicelines/05.mp3",
+                "audio/voicelines/06.mp3",
+                "audio/voicelines/07.mp3",
+                "audio/voicelines/08.mp3",
+                "audio/voicelines/09.mp3",
+                "audio/voicelines/10.mp3",
+                "audio/voicelines/11.mp3",
+                "audio/voicelines/12.mp3",
+                "audio/voicelines/13.mp3",
+                "audio/voicelines/14.mp3",
+                "audio/voicelines/15.mp3",
+                "audio/voicelines/16.mp3",
+                "audio/voicelines/17.mp3",
+                "audio/voicelines/18.mp3",
+                "audio/voicelines/19.mp3",
+                "audio/voicelines/20.mp3",
+                "audio/voicelines/21.mp3",
+                "audio/voicelines/22.mp3",
+                "audio/voicelines/23.mp3",
+                "audio/voicelines/24.mp3",
+                "audio/voicelines/25.mp3",
+                "audio/voicelines/26.mp3",
+                "audio/voicelines/27.mp3",
+                "audio/voicelines/28.mp3",
+                "audio/voicelines/29.mp3",
+                "audio/voicelines/30.mp3",
+                "audio/voicelines/31.mp3",
+                "audio/voicelines/32.mp3",
+                "audio/voicelines/33.mp3",
+                "audio/voicelines/34.mp3"
+            ];
+
+            const minDelay = 20000;
+            const maxDelay = 30000;
+
+            function randomClip() {
+                const delay = Math.random() * (maxDelay - minDelay) + minDelay;
+                setTimeout(() => {
+                    voice.src = voiceClips[Math.floor(Math.random() * voiceClips.length)];
+                    voice.play();
+                    randomClip();
+                }, delay);
+            }
+
             document.addEventListener("click", () => {
-                audio.play();
+                music.play();
+                voice.play();
+                randomClip();
             }, {once: true});
         </script>
 
