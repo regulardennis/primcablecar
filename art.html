@@ -17,52 +17,55 @@
     <script>
             const audio = document.getElementById("music");
             document.addEventListener("click", () => {
-                audio.play();
+                setTimeout(() => {
+                    audio.play();
+                }, 1000);
             }, {once: true});
     </script>
 
     <div class="navbar">
+        <button onclick="document.location='https://github.com/regulardennis/primcablecar'">github</button>
         <button onclick="document.location='index.html'">cable car</button>
     </div>
 
-    <div class="centre masonry-gallery">
+    <div class="centre masonry-gallery scrollable">
         <div class="gallery-item">
-            <img src="images/art/1.png"" class="no-select-drag">
+            <img src="images/art/1.png" class="no-select-drag">
             <p>made by @silo19_ on discord</p>
         </div>
 
         <div class="gallery-item">
-            <img src="images/art/2.jpg"" class="no-select-drag">
+            <img src="images/art/2.jpg" class="no-select-drag">
             <p>made by @luckyvincent831 on discord</p>
         </div>
 
         <div class="gallery-item">
-            <img src="images/art/3.png"" class="no-select-drag">
+            <img src="images/art/3.png" class="no-select-drag">
             <p>made by @kitnx on discord</p>
         </div>
 
         <div class="gallery-item">
-            <img src="images/art/4.png"" class="no-select-drag">
+            <img src="images/art/4.png" class="no-select-drag">
             <p>made by @samica_alguem on discord</p>
         </div>
 
         <div class="gallery-item">
-            <img src="images/art/5.png"" class="no-select-drag">
+            <img src="images/art/5.png" class="no-select-drag">
             <p>made by @shivlow on discord</p>
         </div>
 
         <div class="gallery-item">
-            <img src="images/art/6.png"" class="no-select-drag">
+            <img src="images/art/6.png" class="no-select-drag">
             <p>made by my 5 year old sister</p>
         </div>
 
         <div class="gallery-item">
-            <img src="images/art/7.jpg"" class="no-select-drag">
+            <img src="images/art/7.jpg" class="no-select-drag">
             <p>made by @quert_gb</p>
         </div>
 
         <div class="gallery-item">
-            <img src="images/art/8.png"" class="no-select-drag">
+            <img src="images/art/8.png" class="no-select-drag">
             <p>made by @velciyr on discord</p>
         </div>
     </div>

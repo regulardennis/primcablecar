@@ -70,14 +70,16 @@
             }
 
             document.addEventListener("click", () => {
-                music.play();
-                voice.play();
-                randomClip();
+                setTimeout(() => {
+                    music.play();
+                    voice.play();
+                    randomClip();
+                }, 1000);
             }, {once: true});
         </script>
 
         <div class="navbar">
-            <button onclick="document.location='https://github.com/regulardennis/primcablecar/graphs/contributors?all=1'">lovely people who made this</button>
+            <button onclick="document.location='https://github.com/regulardennis/primcablecar'">github</button>
             <button onclick="document.location='rights.html'">rights</button>
             <button onclick="document.location='art.html'">art</button>
         </div>

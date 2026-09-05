@@ -14,12 +14,27 @@
     </head>
 
     <body>
+        <audio id="music" loop src="audio/rights_music.mp3"></audio>
+        <script>
+            const audio = document.getElementById("music");
+            document.addEventListener("click", () => {
+                setTimeout(() => {
+                    audio.play();
+                }, 1000);
+            }, {once: true});
+        </script>
+
         <div class="navbar">
+            <button onclick="document.location='https://github.com/regulardennis/primcablecar'">github</button>
             <button onclick="document.location='index.html'">cable car</button>
         </div>
 
         <div class="centre">
             <img src="images/rights.png" class="no-select-drag">
+        </div>
+
+        <div class="footer">
+            <p>click anywhere for lovely corporate music from pixabay.com</p>
         </div>
     </body>
 </html>

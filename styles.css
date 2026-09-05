@@ -1,5 +1,21 @@
+:root {
+    --bg: #ffffff;
+    --bg-secondary: #bfbfbf;
+    --text: #000000;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #000000;
+        --bg-secondary: #404040;
+        --text: #ffffff;
+    }
+} */
+
 body {
+    background-color: var(--bg);
     background-image: url(images/bg.png);
+    color: var(--text);
     font-family: "Short Stack", Impact;
 }
 
@@ -45,7 +61,7 @@ button {
     width: 20rem;
 
     background-image: url(images/bg.png);
-    background-color: lightgrey;
+    background-color: var(--bg-secondary);
 
     box-sizing: border-box;
     padding: 16px;
@@ -53,18 +69,18 @@ button {
 }
 
 .masonry-gallery {
-  column-count: 4; 
-  column-gap: 16px; 
-  padding: 16px;
+    column-count: 4; 
+    column-gap: 16px; 
+    padding: 16px;
 }
 
 .gallery-item {
-  break-inside: avoid; 
-  margin-bottom: 16px;
+    break-inside: avoid; 
+    margin-bottom: 16px;
 }
 
 .gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
