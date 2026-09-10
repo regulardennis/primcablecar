@@ -10,3 +10,7 @@ voice lines by [steve reeve on fiverr.com](https://www.fiverr.com/realstevereeve
 
 ## glowing reviews:
 ![](images/reviews/01.png)
+
+![](images/reviews/02.png)
+
+![](images/reviews/03.png)

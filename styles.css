@@ -66,8 +66,14 @@ button {
     overflow-y: auto;
 }
 
-.masonry-gallery {
+.masonry-gallery-4 {
     column-count: 4; 
+    column-gap: 16px; 
+    padding: 16px;
+}
+
+.masonry-gallery-2 {
+    column-count: 2; 
     column-gap: 16px; 
     padding: 16px;
 }
