@@ -51,6 +51,13 @@ button {
 	transform: translate(-50%, -50%);
 }
 
+.centre img {
+    max-width: 90vw;
+    max-height: 60vh;
+    width: auto;
+    height: auto;
+}
+
 #shop {
     position: fixed;
     top: 0;
